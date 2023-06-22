@@ -26,7 +26,7 @@ class ConferenceController extends AbstractController
     {
         return $this->render('conference/index.html.twig', [
             'conferences' => $conferenceRepository->findAll()
-        ]);
+        ])->setPublic();
     }
 
     #[Route('/conference/{slug}', name : 'conference')]
