@@ -31,6 +31,10 @@ symfony serve -d
 ```bash
 symfony console doctrine:fixtures:load
 ```
+## Ouvrir le site dans un navigateur
+```bash
+symfony open:local
+```
 
 ## Lancer le test
 
