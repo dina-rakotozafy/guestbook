@@ -27,6 +27,10 @@ yarn build
 docker-compose up -d
 symfony serve -d
 ```
+## Ajouter quelques conferences:
+```bash
+symfony console doctrine:fixtures:load
+```
 
 ## Lancer le test
 
