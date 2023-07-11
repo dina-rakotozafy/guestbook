@@ -60,6 +60,9 @@ class Comment
     #[Groups(['comment:list', 'comment:item'])]
     private ?string $photoFilename = null;
 
+    #[ORM\Column(length: 255, options: ['default' => 'published'])]
+    private ?string $state = 'published';
+
     #[ORM\PrePersist]
     public function setCreatedAtValue()
     {
@@ -144,6 +147,18 @@ class Comment
     public function setPhotoFilename(?string $photoFilename): static
     {
         $this->photoFilename = $photoFilename;
+
+        return $this;
+    }
+
+    public function getState(): ?string
+    {
+        return $this->state;
+    }
+
+    public function setState(string $state): static
+    {
+        $this->state = $state;
 
         return $this;
     }

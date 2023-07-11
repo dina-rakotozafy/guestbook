@@ -48,8 +48,9 @@ class CommentCrudController extends AbstractCrudController
             ->hideOnIndex();
         yield ImageField::new('photoFilename')
             ->setBasePath('/uploads/photos')
-            ->setLabel('Photo')
-            ->onlyOnIndex();
+            ->setLabel('Photo');
+        
+        yield TextField::new('state');
 
         $createdAt = DateTimeField::new('createdAt')->setFormTypeOptions([
             'years' => range(date('Y'), date('Y') + 5),

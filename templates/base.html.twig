@@ -51,12 +51,7 @@
 
             <nav class="bg-light border-bottom">
                 <div class="container">
-                    {#{{ render_esi(path('conference_header')) }}#}
-                    {% for conference in conferences %}
-                        <a class="nav-conference" href="{{ path('conference', { slug: conference.slug }) }}">
-                            {{ conference }}
-                        </a>
-                    {% endfor %}
+                    {{ render_esi(path('conference_header')) }}
                 </div>
             </nav>
         </header>
@@ -66,7 +61,7 @@
         </main>
 
         <footer class="mt-7 px-3 py-5 text-center text-muted">
-            <p>
+            <p class="text-grey">
                 Conference Guestbook
             </p>
             <p>
