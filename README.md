@@ -2,9 +2,15 @@
 
 Un site pour publier des conferences.
 
-## Environnement de devoleppement
+## Cloner le projet:
+```bash
+git clone https://github.com/dina-rakotozafy/guestbook.git
+cd guestbook
+```
 
-### Pre-requis
+## Environnement de developpement
+
+### Pre-requis:
 
 * PHP 8.2.1
 * Composer
@@ -42,6 +48,4 @@ symfony open:local
 make tests
 ```
 
-
-php -d xdebug.mode=coverage bin/phpunit --coverage-html var/log/test/test-coverage
 
