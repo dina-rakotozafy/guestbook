@@ -49,5 +49,3 @@ make tests
 ```
 
 
-php -d xdebug.mode=coverage bin/phpunit --coverage-html var/log/test/test-coverage
-
