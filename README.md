@@ -2,9 +2,14 @@
 
 Un site pour publier des conferences.
 
-## Environnement de devoleppement
+## Cloner le projet:
+```bash
+https://github.com/dina-rakotozafy/guestbook.git
+```
 
-### Pre-requis
+## Environnement de developpement
+
+### Pre-requis:
 
 * PHP 8.2.1
 * Composer
