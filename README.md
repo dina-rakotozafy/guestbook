@@ -4,7 +4,7 @@ Un site pour publier des conferences.
 
 ## Cloner le projet:
 ```bash
-https://github.com/dina-rakotozafy/guestbook.git
+git clone https://github.com/dina-rakotozafy/guestbook.git
 ```
 
 ## Environnement de developpement
