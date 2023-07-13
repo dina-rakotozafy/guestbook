@@ -19,7 +19,7 @@ cd guestbook
 * Docker-compose
 * nodejs and yarn
 
-Verifier la configuration requise avec:
+Verifier la configuration requise(symfony) avec:
 
 ```bash
 symfony check:requirements
