@@ -24,6 +24,7 @@ Verifier la configuration requise(symfony) avec:
 ```bash
 symfony check:requirements
 ```
+
 ### Installer les dependances
 
 ```bash
@@ -31,16 +32,23 @@ composer install
 yarn install
 yarn build
 ```
+## Lancer l'environnement de developpement
+
+```bash
+docker-compose up -d
+symfony serve -d
+```
 ## Ajouter quelques conferences:
+
 ```bash
 symfony console doctrine:database:create
 symfony console doctrine:migrations:migrate
 symfony console doctrine:fixtures:load
 ```
-## Lancer l'environnement de developpement et ouvrir le site dans un navigateur
+
+## Ouvrir le site dans un navigateur
+
 ```bash
-docker-compose up -d
-symfony serve -d
 symfony open:local
 ```
 
