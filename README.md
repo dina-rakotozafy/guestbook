@@ -24,7 +24,7 @@ Verifier la configuration requise(symfony) avec:
 ```bash
 symfony check:requirements
 ```
-### Lancer l'environnement de developpement
+### Installer les dependances
 
 ```bash
 composer install
@@ -37,7 +37,7 @@ symfony console doctrine:database:create
 symfony console doctrine:migrations:migrate
 symfony console doctrine:fixtures:load
 ```
-## Ouvrir le site dans un navigateur
+## Lancer l'environnement de developpement et ouvrir le site dans un navigateur
 ```bash
 docker-compose up -d
 symfony serve -d
