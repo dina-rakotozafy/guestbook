@@ -35,6 +35,7 @@ symfony serve -d
 ```
 ## Ajouter quelques conferences:
 ```bash
+symfony console doctrine:migrations:migrate
 symfony console doctrine:fixtures:load
 ```
 ## Ouvrir le site dans un navigateur
